@@ -15,9 +15,30 @@ function getRandomInt(min, max) {
 }
 
 var randomInt = getRandomInt(1, 100);
+alert(randomInt);
 /* END STARTING CODE */
 
 // your code goes under here
+var x=parseInt( prompt("gess a number 1-100"));
+while(x!=randomInt)
+{
+	if (x>randomInt) 
+	{
+		alert("you need smoler number");
+		x=parseInt( prompt("tray agein"));
+	}
+	if (x<randomInt)
+	{
+		alert("you need biger number");
+		x=parseInt( prompt("tray agein"));	
+	}
+	if (x===randomInt) {
+		alert("you win");
+		break;
+	}
+	
+
+}
 
     </script>
 </body>
