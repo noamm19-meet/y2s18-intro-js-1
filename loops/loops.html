@@ -20,25 +20,27 @@ alert(randomInt);
 
 // your code goes under here
 var x=parseInt( prompt("gess a number 1-100"));
+var y = 1;
 while(x!=randomInt)
 {
 	if (x>randomInt) 
 	{
 		alert("you need smoler number");
 		x=parseInt( prompt("tray agein"));
+		y++
 	}
 	if (x<randomInt)
 	{
 		alert("you need biger number");
-		x=parseInt( prompt("tray agein"));	
+		x=parseInt( prompt("tray agein"));
+		y++	
 	}
-	if (x===randomInt) {
-		alert("you win");
-		break;
-	}
-	
-
+	//if (x===randomInt) {
+		
+		//break;
+	//}
 }
+alert("you win , you gess: "+y+" times");
 
     </script>
 </body>
